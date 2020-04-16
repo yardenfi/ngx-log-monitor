@@ -18,7 +18,6 @@ import {normalizeLogMessage} from './helpers/log-message.helper';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class LogMonitorComponent implements OnChanges, AfterViewInit {
-
   @Input() title;
   @Input() logStream: LogMessage;
   @Input() history: LogMessage[] = [];
@@ -31,7 +30,6 @@ export class LogMonitorComponent implements OnChanges, AfterViewInit {
   constructor(private zone: NgZone) { }
 
   ngOnChanges(changes: SimpleChanges) {
-
     if (changes['history']) {
       this.history = changes['history'].currentValue.map(normalizeLogMessage);
     }
@@ -53,5 +51,4 @@ export class LogMonitorComponent implements OnChanges, AfterViewInit {
   private scrollToBottom() {
     this.container.nativeElement.scrollTop = this.container.nativeElement.scrollHeight;
   }
-
 }

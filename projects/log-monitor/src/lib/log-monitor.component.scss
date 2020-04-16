@@ -28,7 +28,7 @@ $light-dark: #a8acad;
   padding-top: 5px;
   padding-bottom: 5px;
   overflow-y: auto;
-  font-family: "Lucida Console", Monaco,  monospace, sans-serif;
+  font-family: "Lucida Console", Monaco, monospace, sans-serif;
 }
 
 .animated {
@@ -40,45 +40,43 @@ $light-dark: #a8acad;
     opacity: 0;
     transform: translateY(-10px)
   }
-  to   {
+  to {
     opacity: 1;
     transform: translateY(0px)
   }
 }
 
 
-.title-bar{
+.title-bar {
   padding: 5px;
   font-weight: 600;
 }
 
-.dark-theme.title-bar{
+.dark-theme.title-bar {
   border-bottom: solid 1px $dark-light;
-  background: $dark-title-bar ;
+  background: $dark-title-bar;
 }
 
-.light-theme.title-bar{
+.light-theme.title-bar {
   border-bottom: solid 1px $light-dark;
   background: $light-title-bar;
 }
 
 
-.msg-item{
+.msg-item {
   display: block;
   margin-left: 6px;
   font-size: 0.85em;
 }
 
-.msg-list{
+.msg-list {
   margin: 0;
   height: 100%;
 }
 
 .light-theme {
-
   color: $dark;
   background: $light;
-
 
   .msg-info {
     color: $blue;
@@ -98,7 +96,6 @@ $light-dark: #a8acad;
 }
 
 .dark-theme {
-
   color: $light;
   background: $dark;
 
